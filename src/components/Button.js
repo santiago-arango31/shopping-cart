@@ -1,11 +1,12 @@
 import { Component } from "react";
+import './Components.css'
 
-class Button extends Component{
-    render(){
-        return(
-            <div>Holi</div>
-            // <button onClick={()=>console.log('holi desde el boton')}>
-            // </button>
+
+class Button extends Component {
+    render() {
+        // console.log(this.props)
+        return (
+            <button className="item-button" {...this.props}/>
         )
     }
 }

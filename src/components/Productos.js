@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Producto from './Producto'
-import './Producto.css'
+import './Components.css'
 
 class Productos extends Component {
     componentDidMount() {
