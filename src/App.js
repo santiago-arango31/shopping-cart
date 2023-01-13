@@ -7,13 +7,13 @@ class App extends Component{
       {name:'Tomate', price:1500, img:'./productos/tomate.jpg'},
       {name:'Arbejas', price:2500, img:'./productos/arbejas.jpg'},
       {name:'Lechuga', price:500, img:'./productos/lechuga.jpg'},
-
     ]
   }
+
   render(){
     return(
       <div>
-        <Productos agregarAlCarro={(console.log('No hace nada'))} productos={this.state.productos}></Productos>
+        <Productos agregarAlCarro={() => (console.log('No hace nada'))} productos={this.state.productos}/>
       </div>
     )
   }

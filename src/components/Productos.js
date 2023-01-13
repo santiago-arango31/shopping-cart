@@ -1,5 +1,6 @@
 import { Component } from "react";
 import Producto from './Producto'
+import './Producto.css'
 
 class Productos extends Component {
     componentDidMount() {
@@ -9,7 +10,7 @@ class Productos extends Component {
     render() {
         const { productos, agregarAlCarro } = this.props
         return (
-            <div>
+            <div className="list-productos">
                 {productos.map((value, index, array) =>
                     <Producto
                         agregarAlCarro={agregarAlCarro}
